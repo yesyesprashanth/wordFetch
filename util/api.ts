@@ -1,7 +1,7 @@
 const getWordFile = async(wordType:string)=>{
     
     const response = await fetch(process.env.NODE_ENV === 'production'? 
-            "<http:wordFetch.vercel.app/db/>" : "<http://localhost:3000/db/>" + wordType
+            "<http:wordfetch.vercel.app/db/>" : "<http://localhost:3000/db/>" + wordType
         );
 
     const data = await response.json();    
